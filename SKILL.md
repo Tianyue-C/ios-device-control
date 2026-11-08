@@ -98,8 +98,8 @@ python3 scripts/ios_controller.py launch com.apple.Preferences
 ### 5. Touch & Tap Interactions
 ```bash
 # Tap by accessibility name / label / xpath
-python3 scripts/ios_controller.py tap -s "设置" -u name
-python3 scripts/ios_controller.py tap -s '//XCUIElementTypeSwitch[@name="查找我的iPhone"]' -u xpath
+python3 scripts/ios_controller.py tap -s "General" -u name
+python3 scripts/ios_controller.py tap -s '//XCUIElementTypeSwitch[@name="Airplane Mode"]' -u xpath
 
 # Tap by exact screen coordinates (points)
 python3 scripts/ios_controller.py tap -x 332 -y 148

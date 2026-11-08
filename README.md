@@ -129,8 +129,8 @@ python3 scripts/ios_controller.py launch com.apple.mobilesafari
 python3 scripts/ios_controller.py launch com.apple.Preferences
 
 # Tap by element name, label, or XPath:
-python3 scripts/ios_controller.py tap -s "Settings" -u name
-python3 scripts/ios_controller.py tap -s '//XCUIElementTypeSwitch[@name="Find My iPhone"]' -u xpath
+python3 scripts/ios_controller.py tap -s "General" -u name
+python3 scripts/ios_controller.py tap -s '//XCUIElementTypeSwitch[@name="Airplane Mode"]' -u xpath
 
 # Tap by exact screen point coordinates:
 python3 scripts/ios_controller.py tap -x 332 -y 148
