@@ -40,7 +40,7 @@ WebDriverAgentRunner-Runner (Permanently installed via TrollStore)
         │
    (Accessibility & XCTest APIs)
         ▼
-[ Target iOS Apps: WeChat, Settings, Safari, etc. ]
+[ Target iOS Apps: Settings, Safari, App Store, etc. ]
 ```
 
 ## Quick Start
@@ -88,8 +88,8 @@ python3 scripts/ios_controller.py ocr -i /tmp/screen.png -o /tmp/ocr_results.jso
 ### 4. App Launching
 Launch an app using its bundle identifier:
 ```bash
-# Launch WeChat
-python3 scripts/ios_controller.py launch com.tencent.xinWeChat
+# Launch Safari
+python3 scripts/ios_controller.py launch com.apple.mobilesafari
 
 # Launch iOS Settings
 python3 scripts/ios_controller.py launch com.apple.Preferences

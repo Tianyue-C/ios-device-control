@@ -55,7 +55,7 @@ This project provides an end-to-end framework enabling an AI Agent or developer 
                             │ Native Accessibility APIs
                             ▼
 ┌────────────────────────────────────────────────────────┐
-│     Target iOS Apps (WeChat, Safari, Settings, etc.)    │
+│   Target iOS Apps (Settings, Safari, App Store, etc.)  │
 └────────────────────────────────────────────────────────┘
 ```
 
@@ -125,7 +125,7 @@ python3 scripts/ios_controller.py list-elements --visible-only -o /tmp/elements.
 #### Autonomous Interactions
 ```bash
 # Launch application:
-python3 scripts/ios_controller.py launch com.tencent.xinWeChat
+python3 scripts/ios_controller.py launch com.apple.mobilesafari
 python3 scripts/ios_controller.py launch com.apple.Preferences
 
 # Tap by element name, label, or XPath:
@@ -182,8 +182,9 @@ python3 scripts/ios_controller.py status
 python3 scripts/ios_controller.py screenshot -o /tmp/screen.png
 python3 scripts/ios_controller.py ocr -i /tmp/screen.png -o /tmp/ocr.json
 
-# 3. 唤起微信
-python3 scripts/ios_controller.py launch com.tencent.xinWeChat
+# 3. 唤起应用（如 Safari 或设置）
+python3 scripts/ios_controller.py launch com.apple.mobilesafari
+python3 scripts/ios_controller.py launch com.apple.Preferences
 
 # 4. 模拟点击与返回主屏
 python3 scripts/ios_controller.py tap -x 200 -y 500
