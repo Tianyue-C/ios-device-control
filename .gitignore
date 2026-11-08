@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary and build artifacts
+*.png
+*.jpg
+*.jpeg
+*.json
+/tmp/
+Payload/
+*.ipa
+*.zip
+.DS_Store
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
