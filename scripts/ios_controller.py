@@ -108,7 +108,7 @@ def cmd_tap(args):
     elif args.x is not None and args.y is not None:
         # Tap coordinates via swipe from x,y to x,y or xpath tap
         # In WDA, a quick swipe with dx=0, dy=0 is an instant tap at coordinate
-        wda_args = ["swipe", str(args.x), str(args.y), str(args.x), str(args.y), "--duration", "0.05", "--xctrunner", args.xctrunner]
+        wda_args = ["swipe", str(int(args.x)), str(int(args.y)), str(int(args.x)), str(int(args.y)), "--duration", "0.05", "--xctrunner", args.xctrunner]
         code, out, err = run_wda_cmd(wda_args)
         if code != 0:
             print(f"[-] Tap at coordinate ({args.x}, {args.y}) failed:\n{err}", file=sys.stderr)
@@ -126,7 +126,7 @@ def cmd_press(args):
     print(f"[✓] Pressed hardware button: {args.button}")
 
 def cmd_swipe(args):
-    wda_args = ["swipe", str(args.x1), str(args.y1), str(args.x2), str(args.y2), "--duration", str(args.duration), "--xctrunner", args.xctrunner]
+    wda_args = ["swipe", str(int(args.x1)), str(int(args.y1)), str(int(args.x2)), str(int(args.y2)), "--duration", str(args.duration), "--xctrunner", args.xctrunner]
     code, out, err = run_wda_cmd(wda_args)
     if code != 0:
         print(f"[-] Swipe failed:\n{err}", file=sys.stderr)
